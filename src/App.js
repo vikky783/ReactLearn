@@ -12,6 +12,9 @@ class App extends Component {
     ]
   };
 
+  //Merge comment to test git function
+  //Added comment to test next one
+   
   switchStateHandler = () =>{
     this.setState({
       person : [
