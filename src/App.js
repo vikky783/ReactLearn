@@ -14,6 +14,7 @@ class App extends Component {
 
   //Merge comment to test git function
   //Added comment to test next one
+//updated directlyin git hub
    
   switchStateHandler = () =>{
     this.setState({
