@@ -15,10 +15,10 @@ class App extends Component {
   //Merge comment to test git function
   //Added comment to test next one
    
-  switchStateHandler = () =>{
+  switchStateHandler = (newName) =>{
     this.setState({
       person : [
-        {name: "New Vikky", age: 10},
+        {name: newName, age: 10},
         {name: "Rikky", age: 20},
         {name: "Nikky", age: 30},
         {name: "Mikky", age: 100}
@@ -30,9 +30,9 @@ class App extends Component {
       <div className="App">
        <h1>Hello this is my First React App</h1>
        <p>I am loving it</p>
-       <button onClick={this.switchStateHandler}>Update me</button>
+       <button onClick={ ()=>this.switchStateHandler('New Viikky')}>Update me</button>
        <Person name={this.state.person[0].name} age ={this.state.person[0].age}/>
-       <Person name={this.state.person[1].name} age ={this.state.person[1].age}/>
+       <Person name={this.state.person[1].name} age ={this.state.person[1].age} click = {this.switchStateHandler.bind(this,'Viktor')}/>
        <Person name={this.state.person[2].name} age ={this.state.person[2].age}/>
        <Person name={this.state.person[3].name} age ={this.state.person[3].age}/>
       </div>
@@ -41,3 +41,4 @@ class App extends Component {
 }
 
 export default App;
+ 
