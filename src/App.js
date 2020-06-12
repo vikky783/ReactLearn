@@ -21,22 +21,11 @@ class App extends Component {
         {name: newName, age: 10},
         {name: "Rikky", age: 20},
         {name: "Nikky", age: 30},
-        {name: "Mikky", age: 40}
+        {name: "Mikky", age: 100}
       ]
-    
-    });
-    const switchStateHandler = () =>{
-      setPersonState({
-        person : [
-          {name: "New Vikky", age: 10},
-          {name: "Tikky", age: 20},
-          {name: "Nikky", age: 30},
-          {name: "Mikky", age: 100}
-        ]
-      })
-    } 
-
-   {
+    })
+  }
+  render() {
     return (
       <div className="App">
        <h1>Hello this is my First React App</h1>
@@ -52,3 +41,4 @@ class App extends Component {
 }
 
 export default App;
+ 
